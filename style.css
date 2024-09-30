@@ -338,47 +338,99 @@ nav {
 }
 .ltemList h4 {
   font-size: 32px;
-  color: #fff;  
+  color: #fff;
   font-weight: 700;
   text-align: start;
 }
-.ltemList h4 span{
-    background: linear-gradient(94.68deg, #ff0276 2.51%, #7209b7 86.36%);
-    background-clip: text;
-    color: transparent;
+.ltemList h4 span {
+  background: linear-gradient(94.68deg, #ff0276 2.51%, #7209b7 86.36%);
+  background-clip: text;
+  color: transparent;
 }
 
-.itemGrid{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    position: relative;
-
+.itemGrid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  position: relative;
 }
 
-
-.endImg img{
-    width: 475px;
-    height: auto;
-    position: absolute;
-    right: -150px;
-    top: -80px;
+.endImg img {
+  width: 475px;
+  height: auto;
+  position: absolute;
+  right: -150px;
+  top: -80px;
 }
 
-.listarea ul{
-    list-style: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+.listarea ul {
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
 }
-.listarea ul li{
-    display: flex;
-    align-items: center;
-    margin: 2rem 0;
+.listarea ul li {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
 }
-.listarea ul li img{
-    width: 20px;
-    height: 20px;
-    margin-right: 1rem;
+.listarea ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+/* Section 4 styling  */
+
+.section4 h4 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: #fff;
+}
+.section4 h4 span {
+  color: #3c00ff;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 6, 23, 0) 16.98%,
+    rgba(2, 6, 23, 0.8) 66.5%
+  );
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.cardtextArea {
+  color: #fff;
+  text-align: left;
+  padding: 1rem 0 2rem 0;
+  text-wrap: wrap;
+}
+
+.cardtextArea h4 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+}
+.cardtextArea p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #8d96b2;
 }
 
 @media (max-width: 912px) {
@@ -418,13 +470,24 @@ nav {
     font-size: 18px;
   }
 
-  .ltemList{
+  .ltemList {
     width: 90%;
     overflow: hidden !important;
   }
 
-  .endImg{
+  .endImg {
     display: block;
+  }
+
+  /* section 4  */
+
+  .section4 h4 {
+    font-size: 32px;
+  }
+  
+  .cardGrid{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
   }
 }
 
@@ -488,17 +551,33 @@ nav {
     font-size: 16px;
   }
 
-  .ltemList{
+  .ltemList {
     width: 90%;
     overflow: hidden !important;
     padding: 20px 10px;
   }
 
-  .endImg{
+  .endImg {
     display: none;
   }
 
-  .itemGrid{
+  .itemGrid {
     grid-template-columns: 1fr;
+  }
+
+  /* section 4  */
+
+  .section4 h4 {
+    font-size: 24px;
+  }
+
+  .cardGrid{
+    grid-template-columns: 1fr;
+    width: 80%;
+    gap: 0px;
+  }
+
+  .card img{
+    display: none;
   }
 }
