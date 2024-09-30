@@ -4,6 +4,7 @@ const closenav = document.querySelector(".closenav")
 
 let isOpen = false
 hamburger.addEventListener("click", ()=>{
+
     if(!isOpen){
         MobilelistItems.classList.add("openNav")
     }
