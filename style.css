@@ -433,6 +433,20 @@ nav {
   color: #8d96b2;
 }
 
+/* section 5  */
+
+.section5headingArea {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: #fff;
+  margin: 3rem 3rem;
+}
+
+.section5headingArea span{
+    color: #3c00ff;
+}
+
 @media (max-width: 912px) {
   nav {
     margin: 2rem 2rem;
@@ -484,8 +498,8 @@ nav {
   .section4 h4 {
     font-size: 32px;
   }
-  
-  .cardGrid{
+
+  .cardGrid {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
   }
@@ -571,13 +585,13 @@ nav {
     font-size: 24px;
   }
 
-  .cardGrid{
+  .cardGrid {
     grid-template-columns: 1fr;
     width: 80%;
     gap: 0px;
   }
 
-  .card img{
+  .card img {
     display: none;
   }
 }
